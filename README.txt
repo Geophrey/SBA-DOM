@@ -1,10 +1,3 @@
-platformer
-roguelike #
-point and click
-text-based
-maze
-turn-based #
-
 $ Turn-based roguelike
 $ Rock, paper, scissors type game
 $ 3-5 levels; each level is a webpage

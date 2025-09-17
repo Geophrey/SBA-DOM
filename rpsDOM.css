@@ -1,0 +1,57 @@
+html{
+    height:100%;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    /* align-content: center; */
+    /* margin-top: 50px; */
+    height:100%;
+}
+
+.mainSect{
+    height: 500px;
+    width: 500px;
+    align-self: center;
+}
+
+/* .playerType{
+    height:150px;
+} */
+
+#confirmPlayerName{
+    height:250px;
+    display:flex;
+    justify-content: center;
+}
+
+.buttons{
+    height:250px;
+    /* align-content: center; */
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+input[type="button"]{
+    height:50px;
+    align-self: center;
+    border: 2px solid rgb(255, 166, 0);
+    background-color: #E0AAFF;
+}
+
+input[type="button"]:hover{
+    background-color: #C77DFF;
+}
+
+input[type="button"]:active{
+    background-color: #9D4EDD;
+    border: 2px solid rgb(251, 255, 0);
+}
+
+input[type="text"]{
+    height:25px;
+    align-self: center;
+    border: 2px solid rgb(255, 166, 0);
+}
