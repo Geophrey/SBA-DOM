@@ -11,23 +11,14 @@
     <section class="mainSect" style="background-color: rgb(209, 145, 102);" width="300" height="300">
         <div class="playerType" id="guestPlayer">
             <form id="confirmPlayerName" action="confirmPlayerName" style="background-color: rgb(68, 47, 33);">
-
-                <!-- <label for="username">ENTER USERNAME</label> -->
-                <input type="text" id="username" name="username" placeholder="ENTER USERNAME">
+                <input type="text" id="loginTextBox" name="username" placeholder="ENTER USERNAME" minlength="3" maxlength="20" required>
             </form>
-            <!-- Eye ame aɖeke hã meli si lɔ̃a alo tiam alo dina be vevesese nasu ye ɖokui si o, elabena vevesesee wònye, gake ɣeaɖewoɣi la, nɔnɔme aɖewo dzɔna siwo me agbagbadzedze kple vevesese ate ŋu ana wòakpɔ dzidzɔ gã aɖe le. -->
         </div>
-        <!-- Use DOM to change username form into admin form -->
-        <!-- <span class="playerType" id="adminPlayer">
-            <form action="confirmAdminName">
-                <input type="text" id="adminName" name="adminName" placeholder="ENTER ADMIN NAME">
-            </form>
-            Eye ame aɖeke hã meli si lɔ̃a alo tiam alo dina be vevesese nasu ye ɖokui si o, elabena vevesesee wònye, gake ɣeaɖewoɣi la, nɔnɔme aɖewo dzɔna siwo me agbagbadzedze kple vevesese ate ŋu ana wòakpɔ dzidzɔ gã aɖe le.
-        </span> -->
         <div class="buttons" style="background-color: rgb(226, 201, 89);">
-            <input type="button" id="username" name="createPlayer" value="Create PLAYER and BEGIN!">
-            <input type="button" id="adminSwitch" name="adminSwitch" value="Switch to ADMIN controls">
+            <button id="usernameButton" type="submit" form="confirmPlayerName">Create PLAYER and BEGIN!</button>
+            <button id="adminSwitchButton" type="submit">Switch to ADMIN login</button>
         </div>
     </section>
 </body>
 </html>
+<!-- form="confirmPlayerName" -->
