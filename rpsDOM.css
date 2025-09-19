@@ -14,10 +14,16 @@ body{
     align-self: center;
 }
 
-#confirmPlayerName{
+#guestPlayer{
     height:250px;
     display:flex;
     justify-content: center;
+}
+
+#confirmPlayerName{
+    /* height:250px; */
+    display:flex;
+    /* justify-content: center; */
 }
 
 #buttons{

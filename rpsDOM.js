@@ -8,48 +8,85 @@ const testSomething = document.body;
 let flexElement = null;
 let adminREGEX = "jek|JEK";
 
+// testSomething.addEventListener("click", testingClick)
 
-testSomething.addEventListener("click", testingClick)
+// function testingClick(event){
+//     // console.log(currentWebPage)
+//     // urlChange();
+//     flexElement = document.querySelectorAll("div.loginScreen");
+//     let testThing = document.getElementById("confirmPlayerName")
+//     console.dir(testThing)
 
-function testingClick(event){
-    // console.log(currentWebPage)
-    // urlChange();
-    flexElement = document.querySelectorAll("div.loginScreen");
-    console.log(flexElement)
-}
+//     for (let m = 0; m < 2; m++) {
+//         console.log("new array element")
+//         console.log(m)
+//         console.log(flexElement[m])
+//         console.log(flexElement[m].firstElementChild)
+//         while(flexElement[m].firstElementChild !== null){
+//             flexElement[m].firstElementChild.remove();
+//         }
+//     }
+//     // console.log(flexElement[1].firstElementChild)
+//     // flexElement[1].firstElementChild.remove()
+//     //flexElement[1].firstElementChild.remove();
+// }
 
 //change "onsubmit" to "click" to check that this will store the playerName variable properly
-usernameButton.addEventListener("onsubmit", handleButtonClick);
+//usernameButton.addEventListener("onsubmit", handleButtonClick);
 
 //Clicking the admin switch button will switch the login from guest to admin login and vice versa
 //This will change form validation requirements along the way
 adminSwitchButton.addEventListener("click", handleSwitchButtonClick);
 
-window.addEventListener("onchange", urlChange);
+//window.addEventListener("popstate", urlChange);
 
-//confirmPlayerName.addEventListener("submit", handleSubmit)
+confirmPlayerName.addEventListener("submit", handleSubmit);
 
+function handleSubmit(event) {
+  event.preventDefault()
+  flexElement = document.querySelectorAll("div.loginScreen");
+  playerName = document.getElementById("loginTextBox").value;
 
-// function handleSubmit(event){
-//     playerName = event.target.firstChild.username;
-//     console.log(playerName);
+    for (let m = 0; m < 2; m++) {
+      console.log("new array element");
+      console.log(m);
+      console.log(flexElement[m]);
+      console.log(flexElement[m].firstElementChild);
+      while (flexElement[m].firstElementChild !== null) {
+        flexElement[m].firstElementChild.remove();
+      }
+    }
+
+  console.log(playerName);
+}
+
+// function urlChange(event) {
+//   // console.log(currentWebPage)
+//   // document.querySelectorAll("form")
+//   // document.querySelectorAll("button")
+//   // flexElement = currentWebPage.querySelectorAll("div#loginScreen");
+//   // console.log(flexElement.selectAllChildren())
 // }
 
-function urlChange(event){
-    // console.log(currentWebPage)
-    // document.querySelectorAll("form")
-    // document.querySelectorAll("button")
-    // flexElement = currentWebPage.querySelectorAll("div#loginScreen");
-    // console.log(flexElement.selectAllChildren())
-}
+// function handleButtonClick(event) {
+//   //event.preventDefault();
+// //   playerName = document.getElementById("loginTextBox").value;
 
-function handleButtonClick(event) {
-    event.preventDefault();
-    playerName = document.getElementById("loginTextBox").value
-    // console.log(event);
-    // console.log(playerName);
-    console.log(currentWebPage);
-}
+//     // flexElement = document.querySelectorAll("div.loginScreen");
+
+//     // for (let m = 0; m < 2; m++) {
+//     //   console.log("new array element");
+//     //   console.log(m);
+//     //   console.log(flexElement[m]);
+//     //   console.log(flexElement[m].firstElementChild);
+//     //   while (flexElement[m].firstElementChild !== null) {
+//     //     flexElement[m].firstElementChild.remove();
+//     //   }
+//     // }
+//   // console.log(event);
+//   // console.log(playerName);
+//   console.log(currentWebPage);
+// }
 
 //console.log(playerName)
 
