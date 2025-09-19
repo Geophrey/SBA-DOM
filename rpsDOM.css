@@ -20,7 +20,7 @@ body{
     justify-content: center;
 }
 
-.buttons{
+#buttons{
     height:250px;
     display:flex;
     justify-content: center;
