@@ -16,3 +16,6 @@ $ 3-5 levels; each level is a webpage
 - Create player and begin button will store username as and be referred to as the player continues the game
 - Switch to admin button will change the guest login form to the admin login form
 - admin login form will check if the entered username is the admin's and will refer to the player as admin with special admin controls as the game continues
+
+! gameplay probably won't be implemented very soon
+! current code will just interact with the login menu, changing styles, deleting/creating elements, validating things, etc
